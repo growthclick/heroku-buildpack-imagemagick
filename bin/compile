@@ -66,6 +66,8 @@ cat > $INSTALL_DIR/policy.xml <<EOF
   <policy domain="resource" name="width" value="8KP"/>
   <policy domain="resource" name="height" value="8KP"/>
   <policy domain="resource" name="disk" value="4GiB"/>
+  <policy domain="resource" name="memory" value="128MiB"/>
+  <policy domain="resource" name="map" value="128MiB"/>
   <policy domain="filter" rights="none" pattern="*" />
   <policy domain="coder" rights="none" pattern="EPHEMERAL" />
   <policy domain="coder" rights="none" pattern="HTTPS" />
