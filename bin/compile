@@ -63,8 +63,9 @@ mkdir -p $INSTALL_DIR/etc/ImageMagick
 cat > $INSTALL_DIR/policy.xml <<EOF
 <policymap>
  <policy domain="resource" name="temporary-path" value="/app/temp-docs/convert-images"/>
-  <policy domain="resource" name="memory" value="64MiB"/>
-  <policy domain="resource" name="map" value="64MiB"/>
+  <policy domain="resource" name="width" value="8KP"/>
+  <policy domain="resource" name="height" value="8KP"/>
+  <policy domain="resource" name="disk" value="4GiB"/>
   <policy domain="filter" rights="none" pattern="*" />
   <policy domain="coder" rights="none" pattern="EPHEMERAL" />
   <policy domain="coder" rights="none" pattern="HTTPS" />
@@ -72,7 +73,7 @@ cat > $INSTALL_DIR/policy.xml <<EOF
   <policy domain="coder" rights="none" pattern="MSL" />
   <policy domain="coder" rights="none" pattern="SVG" />
   <policy domain="coder" rights="write" pattern="PDF" />
-  <policy domain="resource" name="list-length" value="64"/>
+  <policy domain="resource" name="list-length" value="32"/>
   <policy domain="resource" name="time" value="120"/>
 </policymap>
 EOF
